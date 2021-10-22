@@ -1,12 +1,18 @@
 
 .header{
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: #11101D;
     height: 5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgb(0, 0, 0);
     left: 0px;
 }
+.header h3{
+  color: #ff20f4;
+  position: absolute;
+  top: 22px;
+  right: 14rem;
 
+}
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -159,7 +165,7 @@
 
 .ion-md-contact{ /*logo perfil*/
     font-size: 50px;
-    color: #000000;
+    color: #b059b3;
     position: absolute;
     top: 0.3rem;
     right: 7.5rem;
@@ -167,7 +173,7 @@
 }
 .fa-sign-out-alt { /*Icono log-out*/
   font-size: 50px;
-  color: #000000;
+  color: #b059b3;
   position: absolute;
   top: 0.9rem;
   right: 2rem;
@@ -312,7 +318,79 @@ footer {
   min-height: 40rem;
 }
 
-body {
+.bg-1{
   background-image:url(https://i.ibb.co/KrQvN6r/euforia-criptomonedas-enero-2020-1.jpg);
   background-size: 100%;
+}
+.bg-2{
+  background-image:url(https://i.ibb.co/KrQvN6r/euforia-criptomonedas-enero-2020-1.jpg);
+}
+/*Pagina login*/
+.header-login{
+  display: flex;
+  min-height: 90px;
+  -webkit-box-shadow: 3px 4px 5px -4px rgb(163 163 163);
+  -moz-box-shadow: 3px 4px 5px -4px rgba(163,163,163,1);
+  box-shadow: 3px 4px 5px -4px rgb(163 163 163);
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-login .mb-4{
+  width: 170px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 30px;
+  width: 200px;
+}
+
+#texto-login h1{
+  color: #ff20f4;
+  font-size: 37px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.text-center{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin h1{
+  color: #ff20f4;
+}
+.form-signin a{
+  color: #000000;
 }
