@@ -1,5 +1,6 @@
 const criptos = ['BTC', 'ETH', 'DOGE','USDT','atom','shib','BNB','SOL','XRP']
-const criptos2 = ['bitcoin', 'ethereum', 'dogecoin','tether','cosmos','shiba-inu','binancecoin','solana','xrp' ]
+const criptos2 = ['bitcoin', 'ethereum', 'dogecoin','tether','cosmos','shiba-inu','binancecoin','solana' ]
+
 const getCriptoData = async () => {
     for (let i = 0; i < criptos.length; i++){
         var url = 'https://min-api.cryptocompare.com/data/price?fsym='+criptos[i]+'&tsyms=USD'
@@ -32,6 +33,6 @@ getCriptoVol();
   tcount=0
   setInterval(function(){
     tcount++
-    if (tcount==10) {getCriptoData(); tcount=0}
+    if (tcount==10) {getCriptoVol(); tcount=0}
 },1000)
 
