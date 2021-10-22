@@ -313,7 +313,15 @@ footer {
   position: relative;
   
 }
-
+@media (max-width: 880px) {
+  footer {
+    display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+    float: right;
+  }
+}
 .body-divisas{
   min-height: 40rem;
 }
@@ -394,22 +402,14 @@ footer {
 .form-signin a{
   color: #000000;
 }
-
-#update-nav {
-  width: 100%;
-  height: 30px;
+#chart-historial{
+  padding-top: 30px;
+  padding-left: 50px;
+}
+@media only screen and (max-width: 600px) {
+  #chart-historial {
+    width: 300px;
+    float: right;
+  }
 }
 
-#range-selector {
-  width: 50%;
-  float: left;
-}
-
-#date-selector {
-  width: 50%;
-  float: right;
-}
-
-#chartContainer2 .canvasjs-chart-toolbar {
-  display: none;
-}
