@@ -30,9 +30,9 @@ getCriptoData();
 },1000)
 
 getCriptoVol();
-  tcount=0
+  tcount2=0
   setInterval(function(){
-    tcount++
-    if (tcount==10) {getCriptoVol(); tcount=0}
+    tcount2++
+    if (tcount2==10) {getCriptoVol(); tcount2=0}
 },1000)
 

@@ -1,0 +1,45 @@
+.balance{ /*texto billetera*/
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 7rem; 
+    left: 5rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  .img-noticia {
+    position: relative;
+    max-width:100%; 
+    width:500px; 
+    height:400px;
+    text-align: right;
+    left: 13rem;
+  }
+  
+  .contenido { /*texto index*/
+    position: relative;
+    font-size: large;
+    left:13rem;
+  }
+  .fila-criptos {
+    display: flex;
+    align-content:flex-start;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .fila-criptos img {
+    flex-grow: 1;
+    flex-basis: 100px;
+    max-width: 150px;
+    max-height: 200px;
+    margin: 30px;
+  }
+  .body-divisas{
+    min-height: 40rem;
+  }
+  
+  body {
+    background-image:url(https://i.ibb.co/KrQvN6r/euforia-criptomonedas-enero-2020-1.jpg);
+    background-size: 100%;
+  }

@@ -1,28 +1,79 @@
-
-.header{
-    position: relative;
-    background-color: #11101D;
-    height: 5rem;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    left: 0px;
+.header {
+  position: relative;
+  background-color: #11101D;
+  height: 5rem;
+  border-bottom: 1px solid black;
+  left: 0px;
 }
-.header h3{
+.header h3 {
   color: #ff20f4;
   position: absolute;
   top: 22px;
   right: 14rem;
-
-}
-/* Google Font Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
 }
 
-.sidebar{
+/*Iconos header*/
+.fa-sign-out-alt {
+  font-size: 50px;
+  color: #b059b3;
+  position: absolute;
+  top: 0.9rem;
+  right: 2rem;
+  width: 50px;
+}
+
+.logo-ib {
+  float: left;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+.logo-ib:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #fbffff;
+  padding: 0.7em 1em;
+}
+
+.footer .fa-facebook {
+  color: #0509ff;
+}
+
+footer {
+  padding-top: 30px;
+  background-color: #11101D;
+  color: #bbb;
+  bottom: -40rem;
+  position: relative;
+  width: 100%;
+}
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+@media (max-width: 880px) {
+  footer {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    float: right;
+  }
+}
+.sidebar {
   position: fixed;
   left: 0;
   top: 0;
@@ -34,32 +85,30 @@
   transition: all 0.5s ease;
   max-height: 100%;
 }
-.sidebar.open{
+.sidebar.open {
   width: 200px;
 }
-
-.sidebar .sidebar-logo{
+.sidebar .sidebar-logo {
   height: 60px;
   display: flex;
   align-items: center;
   position: relative;
 }
-.sidebar .sidebar-logo .icon{
+.sidebar .sidebar-logo .icon {
   opacity: 0;
   transition: all 0.5s ease;
 }
-.sidebar .sidebar-logo .sidebar-titulo{
+.sidebar .sidebar-logo .sidebar-titulo {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
   transition: all 0.5s ease;
 }
-.sidebar.open .sidebar-logo .icon,
-.sidebar.open .sidebar-logo .sidebar-titulo{
+.sidebar.open .sidebar-logo .icon, .sidebar.open .sidebar-logo .sidebar-titulo {
   opacity: 1;
 }
-.sidebar .sidebar-logo #btn{
+.sidebar .sidebar-logo #btn {
   position: absolute;
   top: 50%;
   right: -5px;
@@ -70,10 +119,10 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.sidebar.open .sidebar-logo #btn{
+.sidebar.open .sidebar-logo #btn {
   text-align: right;
 }
-.sidebar i{
+.sidebar i {
   color: #fff;
   height: 60px;
   min-width: 20px;
@@ -81,16 +130,16 @@
   text-align: center;
   line-height: 60px;
 }
-.sidebar .sidebar-lista{
+.sidebar .sidebar-lista {
   margin-top: 20px;
   height: 100%;
 }
-.sidebar li{
+.sidebar li {
   position: relative;
   margin: 8px -15px;
   list-style: none;
 }
-.sidebar li .sidebar-tooltip{
+.sidebar li .sidebar-tooltip {
   position: absolute;
   top: -20px;
   left: 25px;
@@ -106,18 +155,17 @@
   pointer-events: none;
   transition: 0s;
 }
-.sidebar li:hover .sidebar-tooltip{
+.sidebar li:hover .sidebar-tooltip {
   opacity: 1;
   pointer-events: auto;
   transition: all 0.4s ease;
   top: 50%;
   transform: translateY(-50%);
 }
-.sidebar.open li .sidebar-tooltip{
+.sidebar.open li .sidebar-tooltip {
   display: none;
 }
-
-.sidebar li a{
+.sidebar li a {
   display: flex;
   height: 100%;
   width: 90%;
@@ -127,12 +175,12 @@
   transition: all 0.4s ease;
   background: #11101D;
 }
-.sidebar li a:hover{
+.sidebar li a:hover {
   background: #FFF;
   left: -15px;
   position: relative;
 }
-.sidebar li a .sidebar-nombres{
+.sidebar li a .sidebar-nombres {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -141,16 +189,15 @@
   pointer-events: none;
   transition: 0.4s;
 }
-.sidebar.open li a .sidebar-nombres{
+.sidebar.open li a .sidebar-nombres {
   opacity: 1;
   pointer-events: auto;
 }
-.sidebar li a:hover .sidebar-nombres,
-.sidebar li a:hover i{
+.sidebar li a:hover .sidebar-nombres, .sidebar li a:hover i {
   transition: all 0.5s ease;
   color: #11101D;
 }
-.sidebar li i{
+.sidebar li i {
   height: 50px;
   line-height: 50px;
   font-size: 18px;
@@ -158,193 +205,21 @@
 }
 
 @media (max-width: 420px) {
-  .sidebar li .sidebar-tooltip{
+  .sidebar li .sidebar-tooltip {
     display: none;
   }
 }
-
-.ion-md-contact{ /*logo perfil*/
-    font-size: 50px;
-    color: #b059b3;
-    position: absolute;
-    top: 0.3rem;
-    right: 7.5rem;
-    width: 50px;   
-}
-.fa-sign-out-alt { /*Icono log-out*/
-  font-size: 50px;
-  color: #b059b3;
-  position: absolute;
-  top: 0.9rem;
-  right: 2rem;
-  width: 50px;  
-}
-.logo-ib {
-  float:left;
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 5px;
-}
-.logo-ib:hover{
-  background-color: #ddd;
-  color: black;
-}
-
-
-
-
-/*Texto*/
-.balance{ /*texto billetera*/
-  color: rgb(0, 0, 0);
-  position: relative;
-  top: 7rem; 
-  left: 5rem;
-  font-family: 'Open Sans', sans-serif;
-}
-
-
-.img-noticia {
-  position: relative;
-  max-width:100%; 
-  width:500px; 
-  height:400px;
-  text-align: right;
-  left: 13rem;
-}
-
-.contenido { /*texto index*/
-  position: relative;
-  font-size: large;
-  left:13rem;
-}
-.fila-criptos {
-  display: flex;
-  align-content:flex-start;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.fila-criptos img {
-  flex-grow: 1;
-  flex-basis: 100px;
-  max-width: 150px;
-  max-height: 200px;
-  margin: 30px;
-}
-
-/*Grid divisas*/
-.grid {
-  padding-top: 4rem;
-  padding-left: 8rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 2.5rem;
-}
-.diva:hover {
-  transform: translateY(-15px);
-  transition: 250ms;
-}
-.divb:hover{
-  transform: translateY(-10px);
-  transition: 250ms;
-}      
-.divc:hover{
-  transform: translateY(-15px);
-  transition: 250ms;
-}   
-.divd:hover{
-  transform: translateY(-15px);
-  transition: 250ms;
-}   
-.diva1:hover{
-  transform: translateY(-15px);
-  transition: 250ms;
-}   
-.divb1:hover{
-  transform: translateY(-15px);
-  transition: 250ms;
-}   
-.divc1:hover{
-  transform: translateY(-15px);
-  transition: 250ms;
-}   
-.divd1:hover{
-  transform: translateY(-15px);
-  transition: 250ms;
-}    
-
-.diva { grid-area: 1 / 1 / 3 / 2; }
-.divb { grid-area: 1 / 2 / 3 / 3; }
-.divc { grid-area: 1 / 3 / 3 / 4; }
-.divd { grid-area: 1 / 4 / 3 / 5; }
-
-
-
-/*Footer*/
-footer .form-control {
-  background-color: #1f2022;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-  border: none;
-  resize: none;
-  color: #fbffff;
-  padding: 0.7em 1em;
-}
-.footer .fa-facebook{
-  color: #0509ff;
-}
-footer a:hover, footer a:focus {
-  color: #aaa;
-  text-decoration:none;
-  border-bottom:1px dotted #999;
-}
-
-footer a {
-  color: #999;
-  text-decoration:none;
-}
-
-footer {
-  padding-top: 30px;
-  background-color: #11101D;
-  color: #bbb;
-  bottom: -40rem;
-  position: relative;
-  
-}
-@media (max-width: 880px) {
-  footer {
-    display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-    float: right;
-  }
-}
-.body-divisas{
-  min-height: 40rem;
-}
-
-.bg-1{
-  background-image:url(https://i.ibb.co/KrQvN6r/euforia-criptomonedas-enero-2020-1.jpg);
-  background-size: 100%;
-}
-.bg-2{
-  background-image:url(https://i.ibb.co/KrQvN6r/euforia-criptomonedas-enero-2020-1.jpg);
-}
-/*Pagina login*/
-.header-login{
+.header-login {
   display: flex;
   min-height: 90px;
-  -webkit-box-shadow: 3px 4px 5px -4px rgb(163 163 163);
-  -moz-box-shadow: 3px 4px 5px -4px rgba(163,163,163,1);
-  box-shadow: 3px 4px 5px -4px rgb(163 163 163);
+  -webkit-box-shadow: 3px 4px 5px -4px #a3a3a3;
+  -moz-box-shadow: 3px 4px 5px -4px #a3a3a3;
+  box-shadow: 3px 4px 5px -4px #a3a3a3;
   z-index: 1000;
   justify-content: space-between;
   align-items: center;
 }
-.header-login .mb-4{
+.header-login .mb-4 {
   width: 170px;
   margin: auto;
   display: flex;
@@ -355,14 +230,14 @@ footer {
   width: 200px;
 }
 
-#texto-login h1{
+#texto-login h1 {
   color: #ff20f4;
   font-size: 37px;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
 }
-.text-center{
+
+.text-center {
   display: flex;
   align-items: center;
   padding-top: 40px;
@@ -376,117 +251,105 @@ footer {
   padding: 15px;
   margin: auto;
 }
-
 .form-signin .checkbox {
   font-weight: 400;
 }
-
 .form-signin .form-floating:focus-within {
   z-index: 2;
 }
-
-.form-signin input[type="email"] {
+.form-signin input[type=email] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-
-.form-signin input[type="password"] {
+.form-signin input[type=password] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.form-signin h1{
+.form-signin h1, .form-signin a {
   color: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.form-signin a{
-  color: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#chart-historial{
-  padding-top: 30px;
-  padding-left: 50px;
-}
-@media only screen and (max-width: 600px) {
-  #chart-historial {
-    width: 300px;
-    float: right;
-  }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.circle{
-  position: absolute;
-  border-radius: 50%;
-  background: white;
-  animation: ripple 15s infinite;
-  box-shadow: 0px 0px 1px 0px #508fb9;
+.grid {
+  padding-top: 4rem;
+  padding-left: 8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2.5rem;
 }
 
-.small{
-  width: 200px;
-  height: 200px;
-  left: -100px;
-  bottom: -100px;
+.diva:hover, .divb:hover, .divc:hover, .divd:hover, .diva1:hover, .divb1:hover, .divc1:hover, .divd1:hover {
+  transform: translateY(-15px);
+  transition: 250ms;
 }
 
-.medium{
-  width: 400px;
+.diva {
+  grid-area: 1/1/3/2;
+}
+
+.divb {
+  grid-area: 1/2/3/3;
+}
+
+.divc {
+  grid-area: 1/3/3/4;
+}
+
+.divd {
+  grid-area: 1/4/3/5;
+}
+
+.balance {
+  /*texto billetera*/
+  color: black;
+  position: relative;
+  top: 7rem;
+  left: 5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.img-noticia {
+  position: relative;
+  max-width: 100%;
+  width: 500px;
   height: 400px;
-  left: -200px;
-  bottom: -200px;
+  text-align: right;
+  left: 13rem;
 }
 
-.large{
-  width: 600px;
-  height: 600px;
-  left: -300px;
-  bottom: -300px;
+.contenido {
+  /*texto index*/
+  position: relative;
+  font-size: large;
+  left: 13rem;
 }
 
-.xlarge{
-  width: 800px;
-  height: 800px;
-  left: -400px;
-  bottom: -400px;
+.fila-criptos {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.xxlarge{
-  width: 1000px;
-  height: 1000px;
-  left: -500px;
-  bottom: -500px;
+.fila-criptos img {
+  flex-grow: 1;
+  flex-basis: 100px;
+  max-width: 150px;
+  max-height: 200px;
+  margin: 30px;
 }
 
-.shade1{
-  opacity: 0.2;
-}
-.shade2{
-  opacity: 0.5;
+.body-divisas {
+  min-height: 40rem;
 }
 
-.shade3{
-  opacity: 0.7;
+body {
+  background-image: url(https://i.ibb.co/KrQvN6r/euforia-criptomonedas-enero-2020-1.jpg);
+  background-size: 100%;
 }
 
-.shade4{
-  opacity: 0.8;
-}
-
-.shade5{
-  opacity: 0.9;
-}
-
-@keyframes ripple{
-  0%{
-    transform: scale(0.8);
-  }
-  
-  50%{
-    transform: scale(1.2);
-  }
-  
-  100%{
-    transform: scale(0.8);
-  }
-}
+/*# sourceMappingURL=style.css.map */

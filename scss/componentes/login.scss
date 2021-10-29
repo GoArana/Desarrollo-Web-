@@ -1,0 +1,70 @@
+.header-login {
+    display: flex;
+    min-height: 90px;
+    -webkit-box-shadow: 3px 4px 5px -4px rgb(163 163 163);
+    -moz-box-shadow: 3px 4px 5px -4px rgba(163, 163, 163, 1);
+    box-shadow: 3px 4px 5px -4px rgb(163 163 163);
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+  
+    .mb-4 {
+      width: 170px;
+      margin: auto;
+      display: flex;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 30px;
+      width: 200px;
+    }
+  }
+  
+  #texto-login h1 {
+    color: #ff20f4;
+    font-size: 37px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .text-center {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  
+    .checkbox {
+      font-weight: 400;
+    }
+  
+    .form-floating:focus-within {
+      z-index: 2;
+    }
+  
+    input {
+      &[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+  
+      &[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  
+    h1, a {
+      color: #000000;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  }
