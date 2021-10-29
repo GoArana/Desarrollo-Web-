@@ -7,11 +7,11 @@
   }
   
   
-  .img-noticia {
+  .img-card-index {
     position: relative;
     max-width:100%; 
-    width:500px; 
-    height:400px;
+    width:600px; 
+    height:500px;
     text-align: right;
     left: 13rem;
   }
@@ -20,7 +20,7 @@
     top: 1.5rem;
     position: relative;
     font-size: large;
-    left:13rem;
+    left:8rem;
   }
   .fila-criptos {
     display: flex;
@@ -44,3 +44,8 @@
     background-image:url(https://i.ibb.co/KrQvN6r/euforia-criptomonedas-enero-2020-1.jpg);
     background-size: 100%;
   }
+  
+.carousel-inner img{
+  width: 400px;
+}
+
