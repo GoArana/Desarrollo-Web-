@@ -8,6 +8,10 @@ header nav {
 header nav .container .navbar-brand {
   color: #c935a9;
 }
+header nav .container ul li :hover {
+  color: #c935a9;
+  transform: scale(1.2);
+}
 header nav .container ul li a {
   color: white;
 }
@@ -189,35 +193,13 @@ footer a:hover, footer a:focus {
     transform: scale(0.8);
   }
 }
-.grid {
-  padding-top: 4rem;
-  padding-left: 8rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 2.5rem;
+.container .row .col {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.diva:hover, .divb:hover, .divc:hover, .divd:hover, .diva1:hover, .divb1:hover, .divc1:hover, .divd1:hover {
-  transform: translateY(-15px);
+.container .row .col :hover {
+  transform: translateY(-20px);
   transition: 250ms;
-}
-
-.diva {
-  grid-area: 1/1/3/2;
-}
-
-.divb {
-  grid-area: 1/2/3/3;
-}
-
-.divc {
-  grid-area: 1/3/3/4;
-}
-
-.divd {
-  grid-area: 1/4/3/5;
 }
 
 .balance {

@@ -12,6 +12,10 @@ header {
       }
       ul{
         li{
+          :hover{
+            color: rgb(201, 53, 169);
+            transform: scale(1.2);
+          }
           a{
             color:white;
           }
