@@ -268,5 +268,11 @@ body .contenido {
   font-size: large;
   left: 8rem;
 }
+body .container-fluid {
+  margin-top: 50px;
+}
+body .container-fluid .table {
+  background-color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

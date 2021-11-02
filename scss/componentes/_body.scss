@@ -8,4 +8,10 @@ body {
         font-size: large;
         left: 8rem;
       }
+    .container-fluid{
+        margin-top: 50px;
+        .table{
+          background-color: white;
+        }
+    } 
 }
