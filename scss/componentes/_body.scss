@@ -1,0 +1,11 @@
+body {
+    --header-height: 50px;
+    margin: var(--header-height) 0 0 0;
+    .contenido {
+        /*texto index*/
+        margin: var(--header-height) 0 0 0;
+        position: relative;
+        font-size: large;
+        left: 8rem;
+      }
+}

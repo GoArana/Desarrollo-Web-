@@ -9,33 +9,13 @@
   
   .img-card-index {
     position: relative;
-    max-width:100%; 
+    max-width: 100%;
     width:600px; 
     height:500px;
     text-align: right;
     left: 13rem;
   }
-  
-  .contenido { /*texto index*/
-    top: 1.5rem;
-    position: relative;
-    font-size: large;
-    left:8rem;
-  }
-  .fila-criptos {
-    display: flex;
-    align-content:flex-start;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  .fila-criptos img {
-    flex-grow: 1;
-    flex-basis: 100px;
-    max-width: 150px;
-    max-height: 200px;
-    margin: 30px;
-  }
+
   .body-divisas{
     min-height: 40rem;
   }
