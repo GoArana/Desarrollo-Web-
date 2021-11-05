@@ -1,12 +1,23 @@
-.container {
-  .row{
-    .col{
-      margin-top: 20px;
-      margin-bottom: 20px;
-      :hover{
-        transform: translateY(-20px);
-        transition: 250ms;
-      }  
+.container .row .col {
+  margin: var(--header-height) 0 0 0;
+  margin-bottom: 20px;
+  position: relative;
+
+  img {
+    width: 200px;
+    height: 220px;
+    display: block;  
     }
+  :hover {
+    transform: translateY(-20px);
+    transition: 250ms;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .row .col {
+    width: calc(50% - 20px);
+    margin: var(--header-height) 0 0 20px;
+    margin-left: -5px--;
   }
 }

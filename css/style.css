@@ -194,14 +194,27 @@ footer a:hover, footer a:focus {
   }
 }
 .container .row .col {
-  margin-top: 20px;
+  margin: var(--header-height) 0 0 0;
   margin-bottom: 20px;
+  position: relative;
+}
+.container .row .col img {
+  width: 200px;
+  height: 220px;
+  display: block;
 }
 .container .row .col :hover {
   transform: translateY(-20px);
   transition: 250ms;
 }
 
+@media (max-width: 768px) {
+  .container .row .col {
+    width: calc(50% - 20px);
+    margin: var(--header-height) 0 0 20px;
+    margin-left: -5px--;
+  }
+}
 .balance {
   /*texto billetera*/
   color: black;
@@ -234,6 +247,34 @@ footer a:hover, footer a:focus {
   height: 100%;
 }
 
+@media (min-width: 758px) {
+  main h1 {
+    margin-left: -10%;
+  }
+  main h2 {
+    margin-left: -10%;
+  }
+  main #chartContainer {
+    margin-left: -10%;
+  }
+  main .table-responsive {
+    margin-left: -10%;
+  }
+}
+@media (max-width: 758px) {
+  main h1 {
+    margin-left: 5%;
+  }
+  main h2 {
+    margin-left: 5%;
+  }
+  main #chartContainer {
+    margin-left: 5%;
+  }
+  main .table-responsive {
+    margin-left: 5%;
+  }
+}
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
