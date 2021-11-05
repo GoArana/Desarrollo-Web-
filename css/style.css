@@ -33,7 +33,7 @@ footer {
   padding-top: 30px;
   background-color: #11101D;
   color: #bbb;
-  bottom: -40rem;
+  bottom: -20rem;
   position: relative;
   width: 100%;
 }
@@ -47,7 +47,7 @@ footer a:hover, footer a:focus {
   border-bottom: 1px dotted #999;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 878px) {
   footer {
     display: block;
     width: 100%;
@@ -193,6 +193,11 @@ footer a:hover, footer a:focus {
     transform: scale(0.8);
   }
 }
+.container .row {
+  margin: var(--header-height) 0 0 0;
+  margin-bottom: 20px;
+  position: relative;
+}
 .container .row .col {
   margin: var(--header-height) 0 0 0;
   margin-bottom: 20px;
@@ -207,14 +212,14 @@ footer a:hover, footer a:focus {
   transform: translateY(-20px);
   transition: 250ms;
 }
-
 @media (max-width: 768px) {
-  .container .row .col {
+  .container .row .container .row .col {
     width: calc(50% - 20px);
     margin: var(--header-height) 0 0 20px;
     margin-left: -5px--;
   }
 }
+
 .balance {
   /*texto billetera*/
   color: black;
@@ -284,8 +289,16 @@ footer a:hover, footer a:focus {
   margin: var(--header-height) 0 0 0;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  --header-height: 50px;
+  --header-height: 70px;
+  margin: var(--header-height) 0 0 0;
+}
+body #main .container .row {
   margin: var(--header-height) 0 0 0;
 }
 body .contenido {
@@ -300,6 +313,11 @@ body .container-fluid {
 }
 body .container-fluid .table {
   background-color: white;
+}
+
+.body-billetera {
+  background-image: url(https://i.ibb.co/hMJqSNb/fondo-wallet.jpg);
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

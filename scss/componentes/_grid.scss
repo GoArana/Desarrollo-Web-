@@ -1,18 +1,21 @@
-.container .row .col {
+.container .row  {
   margin: var(--header-height) 0 0 0;
   margin-bottom: 20px;
   position: relative;
-
-  img {
-    width: 200px;
-    height: 220px;
-    display: block;  
+  .col{
+    margin: var(--header-height) 0 0 0;
+    margin-bottom: 20px;
+    position: relative;
+    img {
+      width: 200px;
+      height: 220px;
+      display: block;  
+      }
+    :hover {
+      transform: translateY(-20px);
+      transition: 250ms;
     }
-  :hover {
-    transform: translateY(-20px);
-    transition: 250ms;
   }
-}
 
 @media (max-width: 768px) {
   .container .row .col {
@@ -20,4 +23,4 @@
     margin: var(--header-height) 0 0 20px;
     margin-left: -5px--;
   }
-}
+}}

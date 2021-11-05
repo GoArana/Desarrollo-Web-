@@ -1,6 +1,17 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
 body {
-    --header-height: 50px;
+    --header-height: 70px;
     margin: var(--header-height) 0 0 0;
+    #main{
+      .container{
+        .row{
+          margin: var(--header-height) 0 0 0;
+        }
+      }
+    }
     .contenido {
         /*texto index*/
         margin: var(--header-height) 0 0 0;
@@ -14,4 +25,8 @@ body {
           background-color: white;
         }
     } 
+}
+.body-billetera{
+  background-image: url(https://i.ibb.co/hMJqSNb/fondo-wallet.jpg);
+  background-size: cover;
 }
