@@ -3,7 +3,7 @@ header {
   height: 50px;
 }
 header nav {
-  background-color: #1f2022;
+  background-color: #11101D;
 }
 header nav .container .navbar-brand {
   color: #c935a9;
@@ -16,6 +16,15 @@ header nav .container ul li a {
   color: white;
 }
 
+@media (max-width: 950px) {
+  header {
+    height: 70px;
+  }
+  header nav .container .collapse li a {
+    color: white;
+    font-size: 2.5rem;
+  }
+}
 footer .form-control {
   background-color: #1f2022;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
@@ -35,6 +44,7 @@ footer {
   color: #bbb;
   bottom: -20rem;
   position: relative;
+  min-width: 100%;
   width: 100%;
 }
 footer a {
@@ -117,6 +127,7 @@ footer a:hover, footer a:focus {
 .form-signin h1, .form-signin a {
   color: #000000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
 
 .circle {
@@ -301,6 +312,12 @@ body {
 body #main .container .row {
   margin: var(--header-height) 0 0 0;
 }
+body #main .container .row .texto {
+  font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+  font-size: 2.5em;
+  text-decoration: solid;
+  color: black;
+}
 body .contenido {
   /*texto index*/
   margin: var(--header-height) 0 0 0;
@@ -318,6 +335,10 @@ body .container-fluid .table {
 .body-billetera {
   background-image: url(https://i.ibb.co/hMJqSNb/fondo-wallet.jpg);
   background-size: cover;
+}
+
+.body-historial h2 {
+  margin: var(--header-height) 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,9 +9,15 @@ body {
       .container{
         .row{
           margin: var(--header-height) 0 0 0;
+          .texto{
+            font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
+            font-size: 2.5em;
+            text-decoration: solid;
+            color: black;
+          }
         }
       }
-    }
+    }  
     .contenido {
         /*texto index*/
         margin: var(--header-height) 0 0 0;
@@ -29,4 +35,9 @@ body {
 .body-billetera{
   background-image: url(https://i.ibb.co/hMJqSNb/fondo-wallet.jpg);
   background-size: cover;
+}
+.body-historial{
+  h2{
+    margin: var(--header-height) 0 0 0;
+  }
 }

@@ -22,12 +22,12 @@ footer .form-control {
       color: #999;
       text-decoration: none;
     }
-  
     padding-top: 30px;
     background-color: #11101D;
     color: #bbb;
     bottom: -20rem;
     position: relative;
+    min-width: 100%;
     width: 100%;
   }
   
@@ -40,3 +40,4 @@ footer .form-control {
       float: right;
     }
   }
+

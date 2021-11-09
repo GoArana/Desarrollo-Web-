@@ -5,7 +5,7 @@ header {
   // width: 100%;
   height: 50px;
   nav{
-    background-color: #1f2022;
+    background-color: #11101D;
     .container{
       .navbar-brand{
         color: rgb(201, 53, 169);
@@ -21,7 +21,23 @@ header {
           }
         }
       }
-    
+    }
+  }
+}
+@media (max-width: 950px) {
+  header{
+    height: 70px;
+    nav{
+      .container{
+        .collapse{
+          li{
+            a{
+              color: white;
+              font-size: 2.5rem;
+            }
+          } 
+        }
+      }
     }
   }
 }
