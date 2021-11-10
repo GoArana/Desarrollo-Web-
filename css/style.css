@@ -240,15 +240,6 @@ footer a:hover, footer a:focus {
   font-family: "Open Sans", sans-serif;
 }
 
-.img-card-index {
-  position: relative;
-  max-width: 100%;
-  width: 600px;
-  height: 500px;
-  text-align: right;
-  left: 13rem;
-}
-
 .body-divisas {
   min-height: 40rem;
 }
@@ -362,6 +353,11 @@ body .container-fluid .table {
 .body-historial .container-fluid .table {
   background: rgba(0, 151, 19, 0.1);
   font-weight: 700;
+}
+
+.body-login {
+  --footer-width: 100%;
+  width: var(--footer-width);
 }
 
 /*# sourceMappingURL=style.css.map */
