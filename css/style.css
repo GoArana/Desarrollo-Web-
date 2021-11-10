@@ -337,8 +337,27 @@ body .container-fluid .table {
   background-size: cover;
 }
 
+.body-historial {
+  background: #16BFFD;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #CB3066, #16BFFD);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #CB3066, #16BFFD);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .body-historial h2 {
   margin: var(--header-height) 0 0 0;
+  font-size: 45px;
+  background: -webkit-linear-gradient(#834d9b, #d04ed6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.body-historial .container-fluid {
+  margin-top: 50px;
+}
+.body-historial .container-fluid .table {
+  background: rgba(0, 151, 19, 0.1);
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
